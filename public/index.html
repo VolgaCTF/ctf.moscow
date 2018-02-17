@@ -14,5 +14,24 @@
                 </header>
             </div>
         </div>
+	<script>
+          function update() {
+	    var phrases = [
+              'are coming',
+              'beware!',
+              'appointed Mr. Trump President',
+              'will make Mr. Trump President in 2020 again',
+	      'are heading towards you',
+	      'amongst you',
+              'hacked into an every single computer in the US',
+	      'watch out!',
+	      'on <s>steroids</s> meldonium'
+            ]
+	    var ndx = Math.floor(Math.random() * phrases.length)
+            document.querySelector('h1').innerHTML = 'RUSSIAN HACKERS<span>' + phrases[ndx] + '</span>'
+            window.setTimeout(update, 5000)
+	  }
+          window.setTimeout(update, 5000)
+        </script>
     </body>
 </html>
