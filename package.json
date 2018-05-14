@@ -1,0 +1,20 @@
+{
+  "name": "ctf.moscow",
+  "version": "1.0.0",
+  "description": "CTF.MOCSCOW site builder",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node index.js",
+    "production": "NODE_ENV=production node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "foundation-sites": "^6.4.4-rc1",
+    "metalsmith": "^2.3.0",
+    "metalsmith-imagemin": "^4.1.1",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-less": "^2.0.0",
+    "metalsmith-metadata": "0.0.4"
+  }
+}
