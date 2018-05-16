@@ -23,7 +23,7 @@ const build = Metalsmith(__dirname)
     .use(copy_assets(["node_modules/foundation-sites/dist/css/foundation.min.css"], "css"))
     .use(less({
         pattern: [
-            '**/m ain.less'
+            '**/main.less'
         ],
         render: {
             paths: [
