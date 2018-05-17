@@ -1,0 +1,30 @@
+@small-max: 39.9375em;
+@medium-min: 40em;
+@medium-max: 63.9375em;
+@large-min: 64em;
+@large-max: 74.9375em;
+
+.small(@rules){
+  @media screen and (max-width: @small-max){
+    @rules();
+  }
+}
+
+.medium-s(@rules){
+  @media screen and (max-width: @medium-max){
+    @rules();
+  }
+}
+
+.medium(@rules){
+  @media screen and (min-width: @medium-min) and (max-width: @medium-max){
+    @rules();
+  }
+}
+
+
+.large(@rules){
+  @media screen and (min-width: @large-min){
+    @rules();
+  }
+}

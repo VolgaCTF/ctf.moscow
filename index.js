@@ -1,5 +1,6 @@
 const Metalsmith = require('metalsmith');
 const less = require('metalsmith-less');
+const filter = require('metalsmith-filter');
 const readFileSync = require('fs').readFileSync;
 const basename = require('path').basename;
 
@@ -19,6 +20,7 @@ copy_assets = function (assets, dist_dir) {
 
 
 const build = Metalsmith(__dirname)
+    .destination('public')
     .use(copy_assets(["node_modules/jquery/dist/jquery.min.js", "node_modules/foundation-sites/dist/js/foundation.min.js"], "js"))
     .use(copy_assets(["node_modules/foundation-sites/dist/css/foundation.min.css"], "css"))
     .use(less({
@@ -27,10 +29,13 @@ const build = Metalsmith(__dirname)
         ],
         render: {
             paths: [
-                'css/'
-            ]
+                'src/css/'
+            ],
+            dumpLineNumbers: "comments",
+            compress: true
         }
-    }));
+    }))
+    .use(filter(['*', '**/*', '!**/*.less']));
 
 
 build.build(function (err, files) {
