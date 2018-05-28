@@ -28,10 +28,38 @@ section#contacts {
   .medium-s({ background-image: linear-gradient(to bottom, #ddcee9, #cbd6eb); });
 }
 
+.partner-grid {
+  a {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+  }
+
+}
+
 h1 {
   font-family: OpenSans, sans-serif;
   font-size: 40px;
   line-height: 64px;
+  font-weight: 800;
+  color: @header-color;
+}
+
+h4 {
+  font-family: OpenSans, sans-serif;
   font-weight: 800;
   color: @header-color;
 }
@@ -56,38 +84,17 @@ footer {
   color: @header-color;
 }
 
-.partner-logo {
-  width: 200px;
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
 .logo-margin {
   margin-top: 1rem;
 }
 
-.partner-small-padding {
-  .small({ padding-top: 8px; });
-}
-
-.partner-medium-padding {
-  .medium({ padding-top: 16px; });
-}
-
-.partner-large-padding {
-  .large({ padding-top: 16px; });
-}
-
-
 .content-padding {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  .medium({ padding-top: 16px; padding-bottom: 16px; });
+  .medium({ padding-top: 32px; padding-bottom: 32px; });
 
-  .large({ padding-top: 32px; padding-bottom: 32px; })
+  .large({ padding-top: 64px; padding-bottom: 64px; })
 }
 
 .quote {
@@ -100,7 +107,7 @@ footer {
     font-family: OpenSans, serif;
     font-style: italic;
   }
-  .quote-photo{
+  .quote-photo {
     width: 128px;
     height: 128px;
     border-radius: 50%;
@@ -122,71 +129,3 @@ footer {
 .no-js .title-bar {
   .large({ display: none; })
 }
-
-/*
-
-
-background-image: linear-gradient(to bottom, #ddcee9, #cbd6eb);
-
-@background-color: #f5f5f5
-
-.Capture-the-flag-CT {
-  width: 538px;
-  height: 546px;
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.63;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-cyte
-.\- {
-  width: 414px;
-  height: 217px;
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 1.72;
-  letter-spacing: normal;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.8);
-}
-header
-.layer {
-  width: 239px;
-  height: 64px;
-  font-family: Futura;
-  font-size: 40px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1f2553;
-}
-footer
-font-size: 16px;
-font-weight: 600;
-
-nav
-.layer {
-  width: 89px;
-  height: 24px;
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1f2553;
-}*/
