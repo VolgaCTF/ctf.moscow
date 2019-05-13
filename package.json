@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "foundation-sites": "^6.4.4-rc1",
+    "foundation-sites": "^6.5.3",
+    "jquery": "^3.4.1",
     "metalsmith": "^2.3.0",
     "metalsmith-filter": "^1.0.2",
     "metalsmith-imagemin": "^4.1.1",
